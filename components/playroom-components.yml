@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.joinplayroom.com/api-reference/js
+summary: >-
+  Playroom Kit ships prebuilt, embeddable client-side UI/input components for
+  multiplayer games, distinct from the state/networking SDK surface.
+families:
+  - name: On-screen Joystick
+    docs: https://docs.joinplayroom.com/features/games/joystick
+    components:
+      - Joystick
+      - JoystickController
+      - JoystickOptions
+      - ButtonOptions
+      - ZoneOptions
+    description: >-
+      Customizable on-screen virtual joystick + buttons for touch/mobile control,
+      wired to per-player state.
+  - name: Gamepad support
+    docs: https://docs.joinplayroom.com/features/games/gamepads
+    description: Connect physical gamepad controllers to a game.
+  - name: Lobby
+    docs: https://docs.joinplayroom.com/features/games/lobby
+    description: >-
+      Prebuilt multiplayer lobby UI for players to join a room, pick profiles,
+      and ready up before a match.
+loader: npm package playroomkit (see packages/playroom-packages.yml)

@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.joinplayroom.com/mcp
+status: published
+server:
+  name: playroom-docs
+  transport: http
+  url: https://docs.joinplayroom.com/api/mcp
+  purpose: >-
+    Official Playroom documentation MCP server. Exposes the Playroom Kit docs
+    (table of contents, pages, sections, full text, and keyword search) to
+    agents/IDEs so they can ground code against the current SDK reference.
+clients:
+  cursor:
+    file: .cursor/mcp.json
+    config: '{"mcpServers":{"playroom-docs":{"url":"https://docs.joinplayroom.com/api/mcp"}}}'
+  claude_desktop:
+    file: ~/Library/Application Support/Claude/claude_desktop_config.json
+    config: '{"mcpServers":{"playroom-docs":{"url":"https://docs.joinplayroom.com/api/mcp"}}}'
+  stdio_remote:
+    command: npx
+    args: ["-y", "mcp-remote", "https://docs.joinplayroom.com/api/mcp"]
+tools:
+  - name: docs_toc
+    description: Markdown table of contents for the whole site.
+  - name: docs_page
+    description: Single page content by slug.
+  - name: docs_full
+    description: Entire documentation as plain text.
+  - name: docs_toc_section
+    description: Table of contents for one section only.
+  - name: docs_full_section
+    description: Full content for one section.
+  - name: docs_search
+    description: Search by keyword (titles, descriptions, content).

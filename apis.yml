@@ -1,7 +1,30 @@
 aid: playroom
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/playroom.png
 name: Playroom
-description: Playroom is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Playroom (Playroom Kit) is a client-side developer platform for building
+  multiplayer apps and games in minutes. Its single JavaScript/TypeScript SDK
+  (npm playroomkit) provides synchronized global and per-player state, an elected
+  host model, remote procedure calls (RPCs), matchmaking and lobbies, on-screen
+  joystick/gamepad controllers, bots, and turn-based helpers, with wrappers for
+  Unity (C#) and Godot and support across React, Next.js, Vue, Angular, Remix,
+  Phaser, and React Three Fiber. Apps authenticate with a read-only gameId issued
+  from the Dev Portal rather than a server API key, and Playroom hosts the
+  realtime infrastructure. It also embeds into Discord Activities and TikTok Live.
+  Surfaced as a 500 Global portfolio company and enriched into the API Evangelist
+  network.
 url: https://raw.githubusercontent.com/api-evangelist/playroom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +34,75 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Multiplayer
+- Gaming
+- Game Development
+- Real-time
+- SDK
+- State Synchronization
+- Developer Tools
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
 - type: Website
   url: https://joinplayroom.com
+- type: DeveloperPortal
+  url: https://dev.joinplayroom.com
+- type: Documentation
+  url: https://docs.joinplayroom.com
+- type: APIReference
+  url: https://docs.joinplayroom.com/api-reference/js
+- type: GettingStarted
+  url: https://docs.joinplayroom.com
+- type: Blog
+  url: https://docs.joinplayroom.com/blog
+- type: Support
+  url: https://discord.gg/uDHxeRYhRe
+- type: GitHubOrganization
+  url: https://github.com/playroomkit
+- type: Pricing
+  url: https://docs.joinplayroom.com/billing
+- type: SignUp
+  url: https://dev.joinplayroom.com
+- type: TermsOfService
+  url: https://joinplayroom.com/terms
+- type: PrivacyPolicy
+  url: https://joinplayroom.com/privacy
+- type: LLMsTxt
+  url: llms/playroom-llms.txt
+- type: MCPServer
+  url: mcp/playroom-mcp.yml
+- type: Packages
+  url: packages/playroom-packages.yml
+- type: SDKs
+  url: packages/playroom-packages.yml
+- type: ChangeLog
+  url: changelog/playroom-changelog.yml
+- type: Lifecycle
+  url: lifecycle/playroom-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/playroom-lifecycle.yml
+- type: Authentication
+  url: authentication/playroom-authentication.yml
+- type: Conventions
+  url: conventions/playroom-conventions.yml
+- type: ErrorCatalog
+  url: errors/playroom-error-codes.yml
+- type: Components
+  url: components/playroom-components.yml
+- type: DomainSecurity
+  url: security/playroom-domain-security.yml
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

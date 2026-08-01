@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.joinplayroom.com/errors
+format: sdk-error-reference
+envelope:
+  note: >-
+    Playroom Kit surfaces client/API errors as thrown JavaScript errors from SDK
+    calls (chiefly insertCoin). Errors are documented as named reference pages
+    rather than an RFC 9457 problem+json envelope.
+errors:
+  - code: no-game-id
+    title: No gameId provided in the insertCoin function
+    url: https://docs.joinplayroom.com/errors/no-game-id
+    source_operation: insertCoin
+    cause: >-
+      insertCoin() was called without the required gameId parameter, so the SDK
+      cannot connect to Playroom's multiplayer infrastructure.
+    remediation: >-
+      Create a project in the Dev Portal (https://dev.joinplayroom.com), copy the
+      read-only gameId from Configuration > General, and pass it:
+      insertCoin({ gameId: "your_game_id_here" }).

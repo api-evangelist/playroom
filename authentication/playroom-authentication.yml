@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.joinplayroom.com/errors/no-game-id
+summary:
+  types: [gameId, oauth2]
+  model: client-side-sdk
+  note: >-
+    Playroom Kit is a client-side SDK. There is no server API key. Each app is
+    identified by a read-only gameId issued when a project is created in the Dev
+    Portal, passed to insertCoin({ gameId }). Realtime connections are brokered
+    by Playroom's hosted infrastructure keyed on that gameId. OAuth is only
+    involved when embedding into host platforms (Discord Activities, TikTok Live),
+    where the platform's OAuth/token surface is used via the bundled SDK helpers.
+schemes:
+  - name: gameId
+    type: application-identifier
+    where: insertCoin({ gameId })
+    issued_by: https://dev.joinplayroom.com
+    read_only: true
+    docs: https://docs.joinplayroom.com/errors/no-game-id
+  - name: discord-oauth
+    type: oauth2
+    context: Discord Activities embedding
+    helpers: [getDiscordAccessToken, getDiscordClient, getDiscordSDK]
+    docs: https://docs.joinplayroom.com/features/integrations/discord
+  - name: tiktok
+    type: platform-session
+    context: TikTok Live embedding
+    helpers: [onTikTokLiveEvent]
+    docs: https://docs.joinplayroom.com/features/integrations/tiktok

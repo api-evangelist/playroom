@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.joinplayroom.com/changelog
+versioning:
+  scheme: semver-0ver
+  current: 0.0.97
+  surface: npm package playroomkit
+  docs: https://docs.joinplayroom.com/changelog
+deprecation:
+  policy_url: https://docs.joinplayroom.com/changelog
+  documented: true
+  examples:
+    - React 17 games deprecated when React 19 support landed (v0.0.92).
+  sunset_header: false
+sla:
+  url: https://docs.joinplayroom.com/billing
+  note: >-
+    Billing page states server uptime, bandwidth, and API calls are included
+    in all plans; no numeric uptime SLA is published.
+status_page: null
+status_page_note: >-
+  No public status page found (status.joinplayroom.com does not resolve as of
+  this probe).
+deprecated_operations: []

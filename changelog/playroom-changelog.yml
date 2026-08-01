@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.joinplayroom.com/changelog
+scheme: semver-0ver
+current_version: 0.0.97
+notes: >-
+  Playroom Kit publishes an un-dated, version-ordered changelog for the
+  playroomkit npm package. Versions advance as 0.0.x; entries are tagged
+  Added / Fixed / Breaking Change. The recent window below is captured verbatim;
+  the live changelog is the source of truth.
+entries:
+  - version: 0.0.95
+    breaking: false
+    highlights:
+      - Fixed joystick buttons staying true when pressed (otherwise false).
+  - version: 0.0.94
+    breaking: false
+    highlights:
+      - Player state is now preserved when leaving and rejoining a room.
+  - version: 0.0.93
+    breaking: false
+    highlights:
+      - Added leaveRoom method to leave the room voluntarily.
+  - version: 0.0.92
+    breaking: true
+    highlights:
+      - Added React 19 support.
+      - 'Breaking: React 17 games now deprecated.'
+  - version: 0.0.91
+    breaking: false
+    highlights:
+      - Fixed native mobile scrolling issues when the joystick is enabled.

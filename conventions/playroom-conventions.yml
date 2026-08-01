@@ -1,0 +1,55 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.joinplayroom.com/api-reference/js
+summary: >-
+  Cross-cutting semantics for the Playroom Kit client SDK (not a REST API).
+  State is a synchronized key/value store; multiplayer logic runs peer-side with
+  an elected host; cross-client calls use RPCs.
+authentication:
+  style: gameId application identifier (see authentication/playroom-authentication.yml)
+state_model:
+  global_state:
+    setter: setState(key, value, reliable)
+    getter: getState(key)
+    reset: resetStates() / resetPlayersStates()
+    react_hook: useMultiplayerState(key, default)
+    reliability: >-
+      setState accepts a reliable flag; unreliable updates are lower-latency for
+      high-frequency values (e.g. positions), reliable ensures delivery/order.
+  player_state:
+    accessor: myPlayer() / PlayerState
+    react_hooks: [usePlayerState, usePlayersState, usePlayersList]
+    persistence: >-
+      Player state can be preserved across leave/rejoin (since v0.0.94) and
+      persisted per the persistence feature.
+host_model:
+  election: one client is the authoritative host
+  checks: isHost() / useIsHost()
+  transfer: transferHost()
+  guidance: >-
+    Run authoritative game logic behind isHost() so it executes once; other
+    clients receive results via synced state.
+rpc:
+  register: RPC.register(name, handler)
+  call: RPC.call(name, data, mode)
+  purpose: request/response and broadcast calls between connected players.
+lifecycle_hooks:
+  join: onPlayerJoin(callback)
+  disconnect: onDisconnect(callback)
+  async_helpers: [waitForState, waitForPlayerState]
+matchmaking:
+  api: startMatchmaking(MatchmakingOptions)
+  rooms: getRoomCode() returns the 4-letter room code
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key contract; state is last-write-wins on a key, and RPCs are
+    fire-and-forward. No Idempotency pointer is emitted.
+versioning:
+  ref: lifecycle/playroom-lifecycle.yml
+errors:
+  ref: errors/playroom-error-codes.yml
+rate_limiting:
+  model: >-
+    Usage is metered by Monthly Active Users (MAU) rather than per-request rate
+    limits; see billing (Pricing).

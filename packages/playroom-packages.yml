@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/package/playroomkit
+packages:
+  - language: javascript
+    registry: npm
+    name: playroomkit
+    url: https://www.npmjs.com/package/playroomkit
+    install: npm install playroomkit
+    latest_version: 0.0.97
+    homepage: https://joinplayroom.com
+    maintainers: [asadm, sheraz064-ai]
+    official: true
+    notes: >-
+      First-party Playroom Kit SDK. Single package ships the JavaScript/TypeScript
+      core plus React hooks (useMultiplayerState, usePlayerState, usePlayersList,
+      useIsHost). Works across web frameworks (React, Next.js, Vue, Angular, Remix),
+      game engines via the JS bridge (Phaser, Cocos, React Three Fiber), and is
+      wrapped for Unity (C#) and Godot.

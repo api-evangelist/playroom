@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: generated
+source: https://docs.joinplayroom.com/api-reference/js
+skills:
+  - file: playroom-init-multiplayer-session.md
+    name: Initialize a Playroom multiplayer session
+    api: https://docs.joinplayroom.com/api-reference/js
+    operations: [insertCoin, onPlayerJoin, myPlayer, setState, getState]
+  - file: playroom-host-authoritative-rpc.md
+    name: Run host-authoritative logic with RPCs
+    api: https://docs.joinplayroom.com/api-reference/js
+    operations: [isHost, transferHost, RPC, onPlayerJoin, onDisconnect]
