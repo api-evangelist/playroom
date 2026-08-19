@@ -6,10 +6,9 @@ server:
   name: playroom-docs
   transport: http
   url: https://docs.joinplayroom.com/api/mcp
-  purpose: >-
-    Official Playroom documentation MCP server. Exposes the Playroom Kit docs
-    (table of contents, pages, sections, full text, and keyword search) to
-    agents/IDEs so they can ground code against the current SDK reference.
+  purpose: Official Playroom documentation MCP server. Exposes the Playroom Kit docs (table of contents,
+    pages, sections, full text, and keyword search) to agents/IDEs so they can ground code against the
+    current SDK reference.
 clients:
   cursor:
     file: .cursor/mcp.json
@@ -19,17 +18,26 @@ clients:
     config: '{"mcpServers":{"playroom-docs":{"url":"https://docs.joinplayroom.com/api/mcp"}}}'
   stdio_remote:
     command: npx
-    args: ["-y", "mcp-remote", "https://docs.joinplayroom.com/api/mcp"]
+    args:
+    - -y
+    - mcp-remote
+    - https://docs.joinplayroom.com/api/mcp
 tools:
-  - name: docs_toc
-    description: Markdown table of contents for the whole site.
-  - name: docs_page
-    description: Single page content by slug.
-  - name: docs_full
-    description: Entire documentation as plain text.
-  - name: docs_toc_section
-    description: Table of contents for one section only.
-  - name: docs_full_section
-    description: Full content for one section.
-  - name: docs_search
-    description: Search by keyword (titles, descriptions, content).
+- name: docs_toc
+  description: Markdown table of contents for the whole site.
+- name: docs_page
+  description: Single page content by slug.
+- name: docs_full
+  description: Entire documentation as plain text.
+- name: docs_toc_section
+  description: Table of contents for one section only.
+- name: docs_full_section
+  description: Full content for one section.
+- name: docs_search
+  description: Search by keyword (titles, descriptions, content).
+deployment:
+  mode: remote
+  verified: searched
+  tools: 6
+  checked: '2026-08-12'
+  source: catalog MCP census
