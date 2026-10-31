@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Playroom is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Playroom (Playroom Kit) is a client-side developer platform for building multiplayer apps and games in minutes. Its single JavaScript/TypeScript SDK (npm playroomkit) provides synchronized global and per-player state, an elected host model, remote procedure calls (RPCs), matchmaking and lobbies, on-screen joystick/gamepad controllers, bots, and turn-based helpers, with wrappers for Unity (C#) and Godot and support across React, Next.js, Vue, Angular, Remix, Phaser, and React Three Fiber. Apps authenticate with a read-only gameId issued from the Dev Portal rather than a server API key, and Playroom hosts the realtime infrastructure. It also embeds into Discord Activities and TikTok Live. Surfaced as a 500 Global portfolio company and enriched into the API Evangelist network.
 
-Backed by: 500-global — https://joinplayroom.com
+**Areas:** Company · Multiplayer · Gaming · Game Development · Real-Time · SDK · State Synchronization · Developer Tools
+
+## Playroom on APIs.io
+
+Everything profiled for Playroom is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/playroom/](https://apis.io/providers/playroom/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [playroom-docs](https://apis.io/servers/playroom/playroom-docs/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Playroom Authentication](https://apis.io/security/playroom/playroom-authentication/)
+- [Playroom Domain Security](https://apis.io/security/playroom/playroom-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://joinplayroom.com)
+- [Documentation](https://docs.joinplayroom.com)
+- [Getting started](https://docs.joinplayroom.com)
+- [API reference](https://docs.joinplayroom.com/api-reference/js)
+- [Pricing](https://docs.joinplayroom.com/billing)
+- [Sign up](https://dev.joinplayroom.com)
+- [Support](https://discord.gg/uDHxeRYhRe)
+- [Blog](https://docs.joinplayroom.com/blog)
+- [Terms of service](https://joinplayroom.com/terms)
+- [Privacy policy](https://joinplayroom.com/privacy)
+- [GitHub](https://github.com/playroomkit)
+
+## API Evangelist rating
+
+**Kin Score 21.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 56.5 |
+| Access clarity | 10.5 |
+
+**Agent readiness 9.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/playroom/](https://apis.io/providers/playroom/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Playroom: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/playroom/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
